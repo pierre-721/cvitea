@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pierre Desgouilles - CV Interactif</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .photo {
+    width: 120px;
+    border-radius: 60px;
+}
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+      animation: fadeInUp 1s ease-in;
+    }
+    h2 {
+      border-bottom: 2px solid #003366;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+    .job {
+      margin-bottom: 1.5rem;
+    }
+    .job h3 {
+      margin: 0;
+      color: #003366;
+    }
+    .job p {
+      margin: 0.3rem 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="photo.jpg" alt="Photo de Pierre" class="photo">
+    <h1>Pierre Desgouilles</h1>
+    <p>Testeur logiciel dans le domaine médical — garant de la fiabilité pour la santé 💉💻</p>
+  </header>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:pierre.desgouilles@gmail.com">pierre.desgouilles@gmail.com</a></p>
+    <p>LinkedIn : <a href="https://www.linkedin.com/in/pierre-desgouilles" target="_blank">pierre-desgouilles</a></p>
+
+    <h2>Compétences clés</h2>
+    <ul>
+      <li>Tests fonctionnels manuels & automatisés (Selenium, Java, Maven)</li>
+      <li>CI/CD avec Jenkins, Tuleap, Git</li>
+      <li>SQL Developer, Dashboarding KPI, outils de visualisation</li>
+    </ul>
+
+    <h2>Expériences professionnelles</h2>
+    <div class="job">
+      <h3>SOFTWAY MEDICAL - Testeur QA logiciels</h3>
+      <p><em>Janvier 2024 – Aujourd'hui | Lyon</em></p>
+      <p><u>Méthode :</u> Scrum (Sprint 2 semaines, Daily, Sprint Plannig, Backlog Refinement, Démo, Rétrospective, 3 amigos)</p>
+      <p><u>Outils :</u> Tuleap, SharePoint, TEAMS, VM (Windows), SQLDeveloper , Eclipse, Postman</p>
+      <p><u>Tests :</u> 
+      <li>Rédaction, enrichissement et exécution de cas de tests fonctionnels manuels (captures d’écran, jeux de données).</li>
+      <li>Automatisation des tests avec Java 8, Maven et Selenium WebDriver pour la validation de versions actuelles et antérieures.</li>
+      <li>Industrialisation des tests avec Jenkins pour la gestion des campagnes de TNR.</li>
+      <li>Utilisation de Tuleap pour le suivi de projets et de Git pour la gestion de configuration logicielle.</li>
+      <li>Analyse de données en base via SQL Developer (requêtes SQL) pour vérifier la cohérence des résultats.</li>
+      <li>Création d’un Dashboard KPI personnalisé pour piloter les résultats de tests et optimiser la prise de décision QA.</li>
+      </p>
+    </div>
+    <div class="job">
+      <h3>Inetum - Prestataire de service Testeur au Rectorat de Dijon</h3>
+      <p><em>Décembre 2021 – Mai 2023 | Lyon/Dijon</em></p>
+      <p><u>Méthode :</u> Scrum (sprint 2-3 semaines, mêlé quotidienne, lancement de sprint, affinage, démo, rétrospective, 3 amigos)</p>
+      <p><u>Outils :</u> Jira - Confluence, Putty (Linux), Squash TM , DbVisualizer, Postman</p>
+      <p><u>Tests :</u> 3 amigos (scénarios), création tâches Jira, test non fonctionnel (installation de package Versions), création cas de test (gherkin) test de bout en bout, test de non régression, rapport, retour de bug, bilan de qualification, jeux de données (XML)</p>
+    </div>
+    <div class="job">
+      <h3>YMAG SAS - Développeur Front-End</h3>
+      <p><em>Septembre 2020 – Juin 2021</em></p>
+    </div>
+    <div class="job">
+      <h3>Michelin - Responsable Ingénierie Logiciel Big Data</h3>
+      <p><em>Septembre 2018 – Juillet 2020</em></p>
+      <p>Développement d’apps, gestion IoT et visualisation temps réel.</p>
+    </div>
+
+    <h2>Formation</h2>
+    <p><strong>M2i Formation, Lyon (09/2021 - 12/2021) </strong> - Développeur Full-Stack <br> [ <u>Projets :</u> Gestion des patients, E-Commerce
+        <br><u>Outils :</u> VS Code, Eclipse
+        <br><u>Langages :</u> Angular 11 , Java (Springboot, Maven) SQL ]</p>
+    <p><strong>CESI (2018–2020)</strong> – Responsable Ingénierie Logiciel Option Big Data</p>
+    <p><strong>Lycée Nicéphore Nièpce (2016–2018)</strong> – BTS Systèmes Numériques Option Informatique & Réseaux</p>
+
+    <h2>Langues</h2>
+    <p>Français (natif), Anglais (B1)</p>
+  </section>
+</body>
+</html>
